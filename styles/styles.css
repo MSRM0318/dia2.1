@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+}
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #3caa36 50%, rgb(52, 196, 52) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  .l{
+    color: #35a02f;
+  }
+  .m{
+    color: #3a7537;
+  }
+  .hr{
+    border-color: #36ca2f93;
+  }  
+.ol{
+ background-color: rgba(0, 0, 0, 0);
+ color: rgba(0, 0, 0, 0);
+}
+html{
+    display: grid;
+    place-items: center;
+}
+
+section {
+	position:fixed;
+	width:100%;
+	height:155%;
+	top:0;
+	left:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.reloj {
+	display:inline-block;
+	background:#38c13100;
+	color:#3a9b35;
+	padding:30px;
+	font-weight:bold;
+	font-size:40px;
+	border-radius:4px;
+	border: 4px solid #35903000;
+	box-shadow: -8px -8px 15px #347b30,
+				10px 10px 10px #347b30,
+				inset -8px -8px 15px #0dff0070,
+				inset 10px 10px 10px #0dff0070;
+}
